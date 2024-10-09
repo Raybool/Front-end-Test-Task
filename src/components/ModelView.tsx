@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import React, { useRef } from "react";
+import React from 'react';
 
-import { Canvas } from "@react-three/fiber";
+import { Canvas } from '@react-three/fiber';
 
-import { Physics } from "@react-three/rapier";
-import { EffectComposer, N8AO } from "@react-three/postprocessing";
-import { Environment, Lightformer, OrbitControls } from "@react-three/drei";
-import { Model } from "../Model";
+import { Physics } from '@react-three/rapier';
+import { EffectComposer, N8AO } from '@react-three/postprocessing';
+import { Environment, Lightformer, OrbitControls } from '@react-three/drei';
+import { Model } from './Model';
 
 export const ModelView: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ export const ModelView: React.FC = () => {
       shadows
     >
       <OrbitControls autoRotate />
-      <color attach="background" args={["#E9EDDD"]} />
+      <color attach="background" args={['#E9EDDD']} />
       <ambientLight intensity={0.4} />
       <spotLight
         position={[10, 10, 10]}
