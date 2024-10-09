@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --card-background: #d3f5eb;
+  --card-background-around: #1df5b7;
+  --button-color: #3cf541;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 86px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+}
